@@ -2,7 +2,7 @@
 <div class="container">
 <div>
     <select [(ngModel)]="selected" (ngModelChange)="onSelected(selected)">
- <option disabled hidden [value]="selectUndefinedOptionValue">Select Device Id ---</option>
+ <option disabled hidden >Select Device Id ---</option>
         <option *ngFor="let deviceId of someData"
                 [value]="deviceId.label"> 
                 {{ deviceId.label}}
@@ -10,7 +10,7 @@
    </select>
 
     <select  [(ngModel)]="select" (ngModelChange)="onSelect(select)">
-        <option disabled hidden [value]="selectUndefinedOptionValue">Select Device Status --</option>
+        <option disabled hidden >Select Device Status --</option>
         <option *ngFor="let option of options"
                 [value]="option"> 
                 {{ option }}

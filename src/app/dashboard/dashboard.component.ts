@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { AlertService, AuthenticationService,NavbarService } from '../_services/index';
 import { Ng4DropdownModule } from 'ng4-material-dropdown';
 import { Http, Headers, Response, URLSearchParams } from '@angular/http';
+import '@ngrx/core/add/operator/select';
 import 'rxjs/add/operator/map';
 
 @Component({

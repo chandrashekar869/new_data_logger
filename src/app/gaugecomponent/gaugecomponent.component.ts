@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { GoogleGaugesComponent } from '../google-gauges/google-gauges.component';
 import { NavbarService } from '../_services/index';
 import { Http, Headers, Response, URLSearchParams } from '@angular/http';
+import '@ngrx/core/add/operator/select';
 import 'rxjs/add/operator/map';
 
 @Component({
