@@ -17,11 +17,15 @@ import { DashboardComponent } from './dashboard/index';
 import { FooterComponent } from './footer/footer.component';
 import { GaugecomponentComponent } from './gaugecomponent/gaugecomponent.component';
 import { GoogleGaugesComponent } from './google-gauges/google-gauges.component';
+import { userAdminComponent } from './userAdmin/userAdmin.component';
+import { addUserComponent } from './addUser/addUser.component';
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
     imports: [
         BrowserModule,
         FormsModule,
         HttpModule,
+        HttpClientModule,
         AgmCoreModule.forRoot({
         apiKey: 'AIzaSyCJ8L3mMI-DQ_3xoh6DR78Os7qtUsVuT1k'
         }),
@@ -37,7 +41,9 @@ import { GoogleGaugesComponent } from './google-gauges/google-gauges.component';
         DashboardComponent,
         FooterComponent,
         GaugecomponentComponent,
-        GoogleGaugesComponent
+        GoogleGaugesComponent,
+        userAdminComponent,
+        addUserComponent
     ],
     providers: [
         customHttpProvider,
